@@ -1,5 +1,0 @@
-name: ep_icapi_datapoints
-externalId: ep_icapi_datapoints
-description: Extraction pipeline for datapoints loaded from the Ice Cream Factory API into CDF.
-sourceId: {{ icapi_extractors_source_id }}
-dataSetId: {{ icapi_ds_external_id }}

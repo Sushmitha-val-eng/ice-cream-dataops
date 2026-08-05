@@ -86,7 +86,7 @@ def report_ext_pipe(client: CogniteClient, status, message=None):
 
 def handle(client: CogniteClient = None, data=None):
     report_ext_pipe(client, "seen")
-    
+
     sites = None
     backfill = None
     hours = None
@@ -145,7 +145,7 @@ def handle(client: CogniteClient = None, data=None):
 
                 start = latest if latest else now - increment
                 end = now
-            
+
                 dps_list = ice_cream_api.get_datapoints(timeseries_ext_id=ts.external_id, start=start, end=end)
 
                 for dp_dict in dps_list:

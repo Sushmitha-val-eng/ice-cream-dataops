@@ -1,0 +1,14 @@
+name: oee_timeseries
+externalId: oee_timeseries
+description: Cognite Function that calculates OEE timeseries from the extracted datapoints.
+runtime: python311
+functionPath: functions/oee_timeseries/handler.py
+cpu: 2
+memory: 4Gi
+environmentVariables:
+  OEE_SPACE: {{ oee_space_name }}
+  SOURCE_SPACE: {{ icapi_space_name }}
+schedule:
+  name: oee-every-10-minutes
+  cronExpression: "*/10 * * * *"
+  functionExternalId: oee_timeseries
