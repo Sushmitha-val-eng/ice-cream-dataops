@@ -1,2 +1,8 @@
-name: Ice Cream Factory Source Data
-externalId: {{ icapi_ds_external_id }}
+- externalId: {{ icapi_ds_external_id }}
+    name: Ice Cream Factory Source Data
+    description:
+    writeProtected: false
+    metadata:
+       origin: cognite-toolkit
+
+ 
