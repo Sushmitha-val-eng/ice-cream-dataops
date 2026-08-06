@@ -5,4 +5,4 @@ rawTables:
   - dbName: ice-cream-factory-db
     tableName: assets
 source: Ice Cream API
-dataSetExternalId: "{{ icapi_ds_external_id }}"
+dataSetExternalId: {{ icapi_ds_external_id }}
