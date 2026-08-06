@@ -1,4 +1,4 @@
-select
+select distinct
   timeseries.externalId,
   array(node_reference("icapi_dm_space", assets.externalId)) as assets,
   timeseries.isStep,
