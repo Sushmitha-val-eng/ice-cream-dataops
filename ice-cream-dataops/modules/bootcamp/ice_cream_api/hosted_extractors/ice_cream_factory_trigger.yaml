@@ -11,4 +11,4 @@ config:
     scopes:
       - {{ scopes }}
   target:
-    dataSetId: {{ icapi_ds_external_id }}
+    dataSetId: "{{ icapi_ds_external_id }}"

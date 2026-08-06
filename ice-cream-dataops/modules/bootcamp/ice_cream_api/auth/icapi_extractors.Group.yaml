@@ -6,7 +6,7 @@ capabilities:
       actions: [READ]
       scope:
         idScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: ["{{ icapi_ds_external_id }}"]
   - dataModelInstancesAcl:
       actions: [READ, WRITE]
       scope:
@@ -19,17 +19,17 @@ capabilities:
       actions: [READ]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: ["{{ icapi_ds_external_id }}"]
   - extractionRunsAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: ["{{ icapi_ds_external_id }}"]
   - filesAcl:
       actions: [READ, WRITE]
       scope:
         datasetScope:
-          ids: [{{ icapi_ds_external_id }}]
+          ids: ["{{ icapi_ds_external_id }}"]
   - functionsAcl:
       actions: [READ, WRITE]
       scope:
