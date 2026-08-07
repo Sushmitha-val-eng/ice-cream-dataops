@@ -5,7 +5,7 @@ modules:
   - name: oee
     location:
       path: modules/bootcamp/use_cases/oee
-      hash: 96a9807f
+      hash: 4b70e7eb
     build_variables:
     - key: icapi_ds_external_id
       value: ds_icapi
@@ -36,6 +36,13 @@ modules:
       is_selected: true
       location: modules/bootcamp/use_cases/oee
     resources:
+      data_sets:
+      - identifier:
+          externalId: ds_uc_oee
+        source:
+          path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/data_sets/data_sets.DataSet.yaml
+          hash: 19ed1d20
+        kind: DataSet
       data_models:
       - identifier:
           space: oee_ts_space
@@ -70,7 +77,7 @@ modules:
   - name: ice_cream_api
     location:
       path: modules/bootcamp/ice_cream_api
-      hash: 8c6e42ba
+      hash: c560b206
     build_variables:
     - key: icapi_ds_external_id
       value: ds_icapi
@@ -126,7 +133,7 @@ modules:
           tableName: assets
         source:
           path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/ice-cream-factory-db.Table.yaml
-          hash: eb8caa28
+          hash: 9968fb49
         kind: Table
       - identifier:
           dbName: ice-cream-factory-db
@@ -202,7 +209,7 @@ modules:
           version: '1'
         source:
           path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/workflows/wf_icapi_data_pipeline.WorkflowVersion.yaml
-          hash: 3b4b7589
+          hash: 32a6a3f6
         kind: WorkflowVersion
       data_sets:
       - identifier:
@@ -236,7 +243,7 @@ modules:
         kind: Transformation
         extra_sources:
         - path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_asset_hierarchy.Transformation.sql
-          hash: f6cb7f40
+          hash: 5f9044ee
       - identifier:
           externalId: create_asset_hierarchy
         source:
@@ -255,14 +262,14 @@ modules:
           name: Frontfill every 10 minutes for the last hour of data (streamer)
         source:
           path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/schedules.Schedule.yaml
-          hash: cf489358
+          hash: 4ed3e187
         kind: Schedule
       - identifier:
           functionExternalId: icapi_datapoints_extractors
           name: Backfill all sites once a day for the last 5 days (gap filling)
         source:
           path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/schedules.Schedule.yaml
-          hash: cf489358
+          hash: 4ed3e187
         kind: Schedule
       auth:
       - identifier:

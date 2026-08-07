@@ -7,7 +7,7 @@ workflowDefinition:
     type: function
     parameters:
       function:
-        externalId: icapi_datapoints_extractor
+        externalId: icapi_datapoints_extractors
         data: { "hours": 1 }
     retries: 3
     timeout: 3600
