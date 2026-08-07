@@ -1,4 +1,2 @@
-# filepath: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/raw/ice-cream-factory-db.Table.yaml
 - dbName: ice-cream-factory-db
   tableName: assets
-
