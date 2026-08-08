@@ -1,2 +1,0 @@
-externalId: wf_icapi_data_pipeline
-description: Workflow to build asset hierarchy, contextualize time series, extract IC API datapoints, and generate OEE timeseries.

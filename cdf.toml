@@ -11,4 +11,4 @@ version = "0.6.53"
 [plugins]
 run = true
 pull = false
-dump = false
+dump = true
